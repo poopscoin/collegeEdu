@@ -12,7 +12,7 @@ class Car(Vehicle):
     def start_engine(self):
         print(f"Паливо: {self.fuel_type}")
 
-class Bicycle(Vehicle):
+class Motorbike(Vehicle):
     def __init__(self, make, model, year, mileage):
         super().__init__(make, model, year)
         self.mileage = mileage
@@ -21,7 +21,7 @@ class Bicycle(Vehicle):
         print(f"Пробіг: {self.mileage} км")
 
 v1 = Car("Toyota", "Corolla", 2020, "бензин")
-v2 = Bicycle("Forte", "FT300-R1", 2021, 18000)
+v2 = Motorbike("Forte", "FT300-R1", 2021, 18000)
 
 print(v1.make, v1.model, v1.year, v1.fuel_type)
 v1.start_engine()
